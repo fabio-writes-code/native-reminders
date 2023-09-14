@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "reminder-native",
-    "slug": "reminder-native",
+    "slug": "native-reminders",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fabiohc1.nativereminders"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.fabiohc1.nativereminders"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "updates": {
+      "useClassicUpdates": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d020bc42-5c50-4c80-871f-137d082910ed"
+      }
+    },
+    "owner": "fabiohc1"
   }
 }
